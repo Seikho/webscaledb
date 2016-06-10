@@ -1,6 +1,6 @@
 import {readFile, writeFile} from 'fs';
 
-const webscaleDb: { [key: string]: any } = {};
+let webscaleDb: { [key: string]: any } = {};
 
 export function backup(filename: string, callback?: (error?: any) => void) {
     const json = JSON.stringify(webscaleDb);
@@ -14,7 +14,9 @@ export function restore(filename: string, callback?: (error?: any, store?: typeo
         if (error) return callback(error);
 
         try {
-            callback(null, JSON.parse(data.toString()));
+            const parsed = JSON.parse(data.toString());
+            webscaleDb = parsed;
+            callback(null, parsed);
         }
         catch (ex) {
             callback(ex);
