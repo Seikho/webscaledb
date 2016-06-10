@@ -1,6 +1,6 @@
 {
   "name": "webscaledb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WebScaleDB - The new database that is ACID compliant, web scale and asynchronous!",
   "main": "src/index.js",
   "scripts": {
