@@ -1,0 +1,28 @@
+{
+  "name": "webscaledb",
+  "version": "0.1.0",
+  "description": "WebScaleDB - The new database that is ACID compliant, web scale and asynchronous!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seikho/webscaledb.git"
+  },
+  "keywords": [
+    "web",
+    "scale",
+    "database"
+  ],
+  "author": "Carl Winkler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seikho/webscaledb/issues"
+  },
+  "homepage": "https://github.com/seikho/webscaledb#readme",
+  "devDependencies": {
+    "typescript": "^1.9.0-dev.20160610-1.0"
+  }
+}
