@@ -1,6 +1,6 @@
 {
   "name": "webscaledb",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "WebScaleDB - The new database that is ACID compliant, web scale and asynchronous!",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/seikho/webscaledb#readme",
   "devDependencies": {
-    "typescript": "^1.9.0-dev.20160610-1.0"
-  }
+    "@types/node": "^9.3.0",
+    "typescript": "2.6"
+  },
+  "typings": "index.d.ts"
 }

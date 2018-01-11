@@ -2,3 +2,4 @@
 *.ts
 node_modules/
 .vscode/
+!index.d.ts

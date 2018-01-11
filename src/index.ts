@@ -1,13 +1,15 @@
 import {readFile, writeFile} from 'fs';
 
-let webscaleDb: { [key: string]: any } = {};
+export type Config = { [key: string]: any }
+
+let webscaleDb: Config = {};
 
 export function backup(filename: string, callback?: (error?: any) => void) {
     const json = JSON.stringify(webscaleDb);
     writeFile(filename, json, callback || (() => {}));
 }
 
-export function restore(filename: string, callback?: (error?: any, store?: typeof webscaleDb) => void) {
+export function restore(filename: string, callback?: (error?: any, store?: Config) => void) {
     readFile(filename, (error, data) => {
         if (callback == null) return;
 
